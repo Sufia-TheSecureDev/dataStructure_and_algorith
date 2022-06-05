@@ -10,3 +10,4 @@ DSA implementation with php
   - insertion at any position
   - node traversing by printing  
   - delete from any position
+  - revese a linked list
