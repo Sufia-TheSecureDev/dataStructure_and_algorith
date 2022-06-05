@@ -81,6 +81,18 @@ function print_linked_list(){
 		echo $copyHead->value.' ';
 		$copyHead = $copyHead->next;
 	} 
+}
+function reverse_a_linked_list($head){ 
+	$previous = null;
+	$current  = $head->next;
+	$next     = $current->next;
+	while($current != null){
+		$current->next = $previous;
+		$previous = $current;
+		$current = $next;
+		$next = $current->next ??  null;
+	}
+	$head->next = $previous;
 } 
 $head = new Node(); //  dummy node created
 bulk_insert(4,8,6,9); // insertion at tail with bulk func for multiple value
@@ -95,3 +107,6 @@ print_linked_list();  // 5 4 8 6 3
 insert_at(2, 10);
 echo '<br> <br>'; 
 print_linked_list(); // 5 4 10 8 6 3
+reverse_a_linked_list($head);
+echo '<br>  '; 
+print_linked_list();
