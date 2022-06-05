@@ -108,5 +108,5 @@ insert_at(2, 10);
 echo '<br> <br>'; 
 print_linked_list(); // 5 4 10 8 6 3
 reverse_a_linked_list($head);
-echo '<br>  '; 
+echo '<br>'; 
 print_linked_list(); // 3 6 8 10 4 5
