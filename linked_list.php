@@ -87,10 +87,11 @@ function reverse_a_linked_list($head){
 	$current  = $head->next;
 	$next     = $current->next;
 	while($current != null){
+		$next = $current->next;
 		$current->next = $previous;
 		$previous = $current;
 		$current = $next;
-		$next = $current->next ??  null;
+		
 	}
 	$head->next = $previous;
 } 
