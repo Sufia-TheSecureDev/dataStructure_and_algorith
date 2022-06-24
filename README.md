@@ -17,3 +17,6 @@ DSA implementation with php
 
 ### Bubble sort
  - an integer array sorted using buble sort [Time complexity :  O(n^2) ]
+
+### Insertion sort
+ - an integer array sorted using Insertion sort [Time complexity :  O(n^2) but better than bubble sort because this algo skip swaping process ]
