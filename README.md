@@ -20,3 +20,6 @@ DSA implementation with php
 
 ### Insertion sort
  - an integer array sorted using Insertion sort [Time complexity :  O(n^2) but better than bubble sort because this algo skip swaping process ]
+
+### Binary Search 
+ - to find a value in array using binary search [Time complexity :   O(log n) ]
